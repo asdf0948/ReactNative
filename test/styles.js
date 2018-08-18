@@ -12,6 +12,11 @@ export const informationBoxHeaderStyles = StyleSheet.create({
         flexDirection: 'row',
         borderBottomWidth: 0.5,
         alignItems: 'center'
+    },
+    bigImage: {
+        margin: 20,
+        width: 40,
+        height: 40
     }
 });
 

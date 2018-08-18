@@ -23,7 +23,7 @@ export default class InformationBox extends React.Component {
           style={informationBoxHeaderStyles.container}
           onPress={this.onClick}
         >
-          <Image source={img} style={{ margin: 20, width: 40, height: 40 }} />
+          <Image source={img} style={informationBoxHeaderStyles.bigImage} />
           <InformationBoxHeader
             title={this.props.item.title}
             date={this.props.item.date}
