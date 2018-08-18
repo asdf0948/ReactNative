@@ -16,7 +16,7 @@ export const informationBoxHeaderStyles = StyleSheet.create({
     bigImage: {
         margin: 20,
         width: 40,
-        height: 40
+        height: 50
     }
 });
 
