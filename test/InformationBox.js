@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, TouchableOpacity, Image } from 'react-native';
 
-import { informationBoxStyles, informationBoxHeaderStyles } from './styles';
+import { informationBoxHeaderStyles } from './styles';
 
 export default class InformationBox extends React.Component {
   state = { clicked: false }

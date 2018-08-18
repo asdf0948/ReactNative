@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TochableOpacity, FlatList, Image } from 'react-native';
+import { StyleSheet, Text, View, FlatList, Image } from 'react-native';
 
 import InformationBox from './InformationBox';
 
