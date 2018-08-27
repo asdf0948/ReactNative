@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, TouchableOpacity, Image } from 'react-native';
 
-import { informationBoxHeaderStyles } from './styles';
+import { informationBoxHeaderStyles, informationBoxBody } from './styles';
 
 export default class InformationBox extends React.Component {
   state = { clicked: false }
@@ -28,12 +28,12 @@ export default class InformationBox extends React.Component {
             title={this.props.item.title}
             date={this.props.item.date}
           />
-          <Image source={down} style={{ margin: 15, width: 20, height: 20 }} />
+          <Image source={down} style={informationBoxHeaderStyles.smallImage} />
         </TouchableOpacity>
 
         {
           this.state.clicked ?
-            <Text style={{ borderColor: '#f1f1f1', padding: 22, borderBottomWidth: 0.5, backgroundColor: '#f1f1f1' }}>
+            <Text style={informationBoxBody.body}>
               {this.props.item.body}
             </Text>
             : null
@@ -47,7 +47,7 @@ export default class InformationBox extends React.Component {
 class InformationBoxHeader extends React.Component {
   render() {
     return (
-      <View style={{ height: 70, width: 250, justifyContent: 'center' }}>
+      <View style={informationBoxBody.textBar}>
         <Text style={{ fontSize: 14 }}>{this.props.title}</Text>
         <Text style={{ fontSize: 12 }}>{this.props.date}</Text>
       </View>
