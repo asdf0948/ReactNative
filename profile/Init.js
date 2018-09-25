@@ -16,7 +16,7 @@ export default class Init extends React.Component {
           title={'MyProfile'} 
           onPress={() => navigation.dispatch(one)} 
         />
-        <Button 
+        <Button   
           title={'XProfile'} 
           onPress={() => navigation.dispatch(two)} 
         />

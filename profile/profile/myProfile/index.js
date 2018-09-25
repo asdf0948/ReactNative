@@ -1,9 +1,6 @@
 import React from 'react';
-import { Text, View } from 'react-native';
 
 import Profile from '../index';
-
-import { styles } from './styles';
 
 export default class MyProfile extends React.Component {
   render() {
@@ -16,21 +13,18 @@ export default class MyProfile extends React.Component {
       "email": "hello@gmail.com",
       "id": 48,
       "major": "자유전공학부",
-      "name": "2기_이름_12",
-      "occupation": "업종_5",
+      "name": "곽민우",
+      "occupation": "증권",
       "order": 2,
       "phoneNumber": "01014320008",
       "profileUrl": null,
       "rank": "CEO",
       "studentOrder": 5,
-      "updatedAt": null
+      "updatedAt": null,
+      "gradeNumber": 12,
+      "name": "곽민우"
     }
 
-    return (
-      <View style={styles.container}>
-        {/* <Text>MyProfile</Text> */}
-        <Profile myProfile={true} profile={profile} />
-      </View>
-    );
+    return <Profile myProfile={true} profile={profile} />;
   }
 }

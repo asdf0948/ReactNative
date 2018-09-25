@@ -6,15 +6,9 @@ import XProfile from '../profile/xProfile/index';
 
 export const RootStack = createStackNavigator(
   {
-    Init: {
-      screen: Init
-    },
-    MyProfile: {
-      screen: MyProfile
-    },
-    XProfile: {
-      screen: XProfile
-    }
+    Init,
+    MyProfile,
+    XProfile
   },
   {
     initialRouteName: 'Init',
